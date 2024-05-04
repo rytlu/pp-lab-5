@@ -8,8 +8,8 @@ public class Main {
             Person person = new Person("Wojtek", 30);
             System.out.println("Name: " + person.getName());
             System.out.println("Age: " + person.getAge());
-        } catch (InvalidAgeException e) {
-            System.out.println("Error: " + e.getMessage());
+        } catch (InvalidAgeException error) {
+            System.out.println("Error: " + error.getMessage());
         }
         EmailMessenger emailMessenger = new EmailMessenger();
         emailMessenger.sendMessage("Message");
